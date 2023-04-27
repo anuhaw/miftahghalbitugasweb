@@ -1,0 +1,389 @@
+:root {
+  --pr-color: #d10404;
+  --sc-color: #6a0000;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #d10404;
+}
+
+/*style Navbar*/
+
+.navbar {
+  z-index: 3;
+}
+
+/*Navbar Color*/
+
+.navbar {
+  background-color: var(--sc-color);
+}
+
+* {
+  z-index: 2;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.button-secondary {
+  width: 133px;
+  height: 40px;
+  background-color: ffffff;
+  color: var(--pr-color);
+  border: none;
+  font-weight: bold;
+}
+
+.button-primary {
+  width: 133px;
+  height: 40px;
+  background-color: transparent;
+  color: var(--pr-color);
+  border: none;
+  font-weight: reguler;
+}
+
+/*Hero Section*/
+
+#hero {
+  background-image: url(Image/Navigasi.png);
+  height: 100vh;
+  width: 100%;
+}
+
+.img-hero {
+  width: 100%;
+  position: absolute;
+}
+.hero-tagline h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 72px;
+}
+
+.hero-tagline p {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  line-height: 30px;
+  width: 85%;
+}
+
+.button-lg-primary {
+  width: 237px;
+  height: 70px;
+  background-color: white;
+  color: var(--sc-color);
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*News Section*/
+
+#News {
+  padding: 100px 0;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: bolder;
+  color: wheat;
+}
+
+.card-news {
+  width: 100%;
+  height: 300px;
+  border-radius: 7px;
+  background-color: var(--pr-color);
+  padding: 40px;
+  box-shadow: 0 0 0 7px rgba(0, 0, 0, 0, 5);
+
+  transition: all 0.2s ease-in;
+}
+
+.circle-icon {
+  width: 75px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+
+  transition: all 0.1s ease-in;
+}
+
+.card-news h3 {
+  color: var(--sc-color);
+  font-size: 25px;
+  font-weight: bold;
+
+  transition: all 0.2s ease-in;
+}
+
+.card-news p {
+  color: var(--sc-color);
+  font-size: 15px;
+}
+
+/*Hover*/
+
+.card-news:hover {
+  width: 100%;
+  height: 313px;
+  border-radius: 7px;
+  background: linear-gradient(160deg, var(--pr-color), var(--sc-color));
+  padding: 40px;
+  box-shadow: 0 0 0 7px rgba(0, 0, 0, 0, 5);
+  transition: all 0.2s ease-in;
+}
+
+.card-news:hover .circle-icon {
+  background-color: var(--pr-color);
+  transition: all 0.2s ease-in;
+}
+
+.card-news:hover h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+}
+
+.card-news:hover p {
+  color: white;
+  font-size: 15px;
+}
+
+/*Search Section*/
+
+#search {
+  background-image: url(../Image/asset/Group\ 5.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#search h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+
+#search p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+
+.input-cari {
+  height: 88px;
+}
+
+.input-cari:focus {
+  border: none;
+}
+
+.input-cari .button-secondary {
+  width: 150px;
+  height: 88px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--sc-color);
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 0 0 0 10px;
+  padding: auto;
+}
+
+.input-cari .button-primary {
+  height: 88px;
+  background-color: var(--sc-color);
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0 10px 0 10px;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .nav-link {
+  background-color: rgba(255, 255, 255, 0, 5);
+  border-radius: 0 0 0 0;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--pr-color);
+  color: var(--sc-color);
+  border-radius: 0 9px 0 0;
+  border: none;
+  font-weight: bolder;
+}
+
+.nav-tabs .nav-link {
+  color: white;
+  border: none;
+  background-color: var(--sc-color);
+  font-weight: bolder;
+}
+
+/*Rekomendasi Section*/
+
+.card {
+  height: 400px;
+  border: none;
+  width: 95%;
+}
+
+.card-body h4 {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 0.8rem;
+}
+
+.card-body p {
+  color: rgb(74, 74, 74);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.card:hover {
+  background: linear-gradient(170deg, var(--sc-color), var(--pr-color));
+  box-shadow: 0 10px 20px (rgba(0, 0, 0, 0, 5));
+  transition: all ease-in-out 0.3s;
+}
+
+.card:hover .card-body h4 {
+  color: white;
+  transition: all ease-in-out 0.3;
+}
+
+.card:hover .card-body p {
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+#contact {
+  background-image: url(Image/Asset/Group\ 5.png);
+  margin-top: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contact .container {
+  padding: 148px 0 148px 0;
+}
+
+#contact h3 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 60px;
+  color: white;
+}
+
+#contact h6 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 27px;
+  color: white;
+  margin: 23px 0 14px 0;
+}
+
+#contact a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+.card-contact {
+  width: 100%;
+  height: 445px;
+  background-color: var(--pr-color);
+  border-radius: 5px;
+  padding: 52px 48px;
+}
+
+.card-contact h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--sc-color);
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.form-control {
+  background: white;
+  height: 88px;
+  border: none;
+}
+
+.form-floating label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--sc-color);
+}
+
+.button-kontak {
+  width: 100%;
+  height: 75px;
+  background-color: var(--sc-color);
+  border: none;
+  font-weight: bold;
+  line-height: 36px;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 270px;
+  background-color: var(--sc-color);
+}
+
+.copyright {
+  bottom: 1%;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+footer a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+  text-decoration: none;
+}

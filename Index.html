@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Responsive-->
+    <link rel="stylesheet" href="responsive.css" />
+
+    <!-- Logo Title -->
+    <link rel="icon" href="Image/alarm-clock--v2.png" type="Image/x-icon" />
+
+    <title>Injury Time</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark possition-fixed w-100">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="Image/alarm-clock--v2.png"
+            alt=""
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top me-3"
+          />Injury Time</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Jadwal Pertandingan</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Kontak</a>
+            </li>
+          </ul>
+
+          <div>
+            <button class="button-primary">Daftar</button>
+            <button class="button-secondary">Masuk</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <section id="hero">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-md-6 hero-tagline my-auto">
+            <h1>Berita Sepak Bola dan Jersey Terbaik</h1>
+            <p>
+              <span class="fw-bold">Injury Time</span>
+              hadir untuk memberikan informasi dan menemukan Jersey terbaik
+              untukmu, dengan sumber terpercaya dan Jersey Original
+            </p>
+            <button class="button-lg-primary">Temukan Jersey</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--News-->
+    <section id="News">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>News</h2>
+            <span class="sub-title">Infomasi Berita Bola Terbaik</span>
+          </div>
+        </div>
+
+        <div class="row mt-6">
+          <div class="col-md-4 text-center">
+            <div class="card-news">
+              <div class="circle-icon possition-relative mx-auto">
+                <img src="Image/Untitled-1-01.png" alt="" width="70
+                class="possition-absolute top-50 start-50 translate-middle/>
+              </div>
+              <h3 class="mt-4">Berita UEFA</h3>
+              <p class="mt-3">Berita sepak bola benua biru</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card-news">
+              <div class="circle-icon possition-relative mx-auto">
+                <img src="Image/Untitled-1-02.png" alt="" width="70
+                class="possition-absolute top-50 start-50 translate-middle />
+              </div>
+              <h3 class="mt-4">Berita PSSI</h3>
+              <p class="mt-3">Berita sepak bola dalam negeri</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card-news">
+              <div class="circle-icon possition-relative mx-auto">
+                <img src="Image/Untitled-1-03.png" alt="" width="70
+                class="possition-absolute top-50 start-50 translate-middle />
+              </div>
+              <h3 class="mt-4">Berita FIFA</h3>
+              <p class="mt-3">Berita sepak bola Seluruh Dunia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Jadwal Pertandingan-->
+    <section id="search" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Jadwal Pertandingan</h2>
+
+            <p class="sub-search">Jadwal Pertandingan Seluruh Liga Didunia</p>
+          </div>
+          <div class="col-10 mx-auto mt-5">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#benuabiru"
+                  type="button"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                >
+                  Liga Benua Biru
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#indonesia"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  Liga Indonesia
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#fifa"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                >
+                  FIFA
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="benuabiru"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <!--Jadwal Pertandingan-->
+                <div class="input-group input-cari mb-3">
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Jadwal
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                  <!--Klasemen-->
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Klasemen
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Text input with dropdown button"
+                    placeholder="Cari Sesuai Liga, Tim, Klasemen"
+                  />
+                  <button
+                    class="button-primary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="indonesia"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <!--Jadwal Pertandingan-->
+                <div class="input-group input-cari mb-3">
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Jadwal
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                  <!--Klasemen-->
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Klasemen
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Text input with dropdown button"
+                    placeholder="Cari Sesuai Liga, Tim, Klasemen"
+                  />
+                  <button
+                    class="button-primary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="fifa"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                <!--Jadwal Pertandingan-->
+                <div class="input-group input-cari mb-3">
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Jadwal
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                  <!--Klasemen-->
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Klasemen
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Text input with dropdown button"
+                    placeholder="Cari Sesuai Liga, Tim, Klasemen"
+                  />
+                  <button
+                    class="button-primary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Recomendasi Section-->
+
+    <section id="rekomendasi">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center mt-5">
+            <h2>Rekomendasi Jersey Untuk Mu</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 d-flex justify-content-evenly">
+            <div class="card p-3">
+              <img
+                src="Image/2022-2023-PSG-Home-Soccer-Jersey-300x300.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>IDR. 500.000</h4>
+                <p>Jersey Home PSG 2022-2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 d-flex justify-content-evenly">
+            <div class="card p-3">
+              <img
+                src="Image/2022-2023-AC-Milan-Home-Soccer-Jersey-300x300.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>IDR. 500.000</h4>
+                <p>Jersey Home AC Milan 2022-2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 d-flex justify-content-evenly">
+            <div class="card p-3">
+              <img
+                src="Image/2022-2023-Al-Nassr-Home-Soccer-Jersey-300x300.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>IDR. 500.000</h4>
+                <p>Jersey Home Al 2022-2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 d-flex justify-content-evenly">
+            <div class="card p-3">
+              <img
+                src="Image/2022-2023-Inter-Milan-Home-Soccer-Jersey-300x300.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>IDR. 500.000</h4>
+                <p>Jersey Home Inter Milan 2022-2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 d-flex justify-content-evenly">
+            <div class="card p-3">
+              <img
+                src="Image/2022-2023-Liverpool-Home-Soccer-Jersey-300x300.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>IDR. 500.000</h4>
+                <p>Jersey Home Liverpool 2022-2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 d-flex justify-content-evenly">
+            <div class="card p-3">
+              <img
+                src="Image/2022-23-Barcelona-Away-Soccer-Jersey-300x300.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>IDR. 500.000</h4>
+                <p>Jersey Away Barcelona 2022-2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Fitur Section-->
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>
+                Mau Lebih Cepat Mendapatkan Berita Bola dan Promo Jersey?
+                Hubungi Kami
+              </h3>
+              <div class="kontakk">
+                <h6>Kontak</h6>
+                <div class="mb-3">
+                  <img src="Image/Asset/gmail.png" alt="" />
+                  <a href="#">anuhawww@gmail.com</a>
+                </div>
+
+                <div class="mb-3">
+                  <img src="Image/Asset/whatsapp.png" alt="" />
+                  <a href="#">0813-2425-9641</a>
+                </div>
+
+                <h6>Sosial Media</h6>
+                <a href="#" class="me-lg-3 me-1"><img src="Image/Asset/instagram-new (1).png" alt=""/></a>
+                <a href="#" class="me-lg-3 me-1"><img src="Image/Asset/tiktok--v1.png" alt="" /></a>
+                <a href="#" class="me-lg-3 me-1"><img src="Image/Asset/twitter.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-contact w-100">
+                <form action="">
+                <h2>Ada Pertanyaan?</h2>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput" class="d-flex align-items-center">Masukan e-mail disini</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput" class="d-flex align-items-center">Pertanyaan Anda</label>
+              </div>
+              <button type="submit" class="button-kontak">Kirim</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="d-flex align-items-center position-relative">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 d-flex align-items-center justify-content-md-start justify-content-center">
+              <img src="Image/alarm-clock--v2 1.png" alt="">
+              <a href="#" class="ms-3">Injury Time</a>
+            </div>
+            <div class="col-md-5 d-flex justify-content-evenly justify-content-center">
+              <a href="#hero">Home</a>
+              <a href="#News">News</a>
+              <a href="#search">Jadwal Pertandingan</a>
+              <a href="#rekomendasi">Store</a>
+              <a href="#contact">Kontak</a>
+            </div>
+          </div>
+          <div class="row position-absolute copyright start-50 translate-middle">
+            <div class="col-12">
+              <p class="text-center">Copyright by Miftah Ghalbi All Right Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="Js/script.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>-
+    -->
+  </body>
+</html>
